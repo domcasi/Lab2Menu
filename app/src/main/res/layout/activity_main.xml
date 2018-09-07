@@ -6,17 +6,18 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     tools:context=".MainActivity">
+//Linear Layout
 
     <ImageView
         android:id="@+id/imageView2"
         android:layout_width="wrap_content"
-        android:layout_height="302dp"
+        android:layout_height="271dp"
         app:srcCompat="@drawable/bubbasaur" />
 
     <TextView
         android:layout_width="200dp"
         android:layout_height="51dp"
-        android:layout_marginLeft="175dp"
+        android:layout_marginLeft="150dp"
         android:text="TITLE"
         android:textAllCaps="false" />
 
