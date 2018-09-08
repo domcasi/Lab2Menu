@@ -16,6 +16,9 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".relativeAct" />
+        <activity android:name=".linearAct" />
+        <activity android:name=".ConstraintAct"></activity>
     </application>
 
 </manifest>

@@ -1,5 +1,6 @@
 package iics.casino.dominicmichael.linearlayout;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -12,22 +13,33 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.layout_menu);
 
-        Button NextButt =(Button) findViewById(R.id.button4);
-        Button BackButt =(Button) findViewById(R.id.button3);
+        Button LinButt =(Button) findViewById(R.id.LinearButton);
+        Button ConButt =(Button) findViewById(R.id.ConstraintButton);
+        Button RelButt =(Button) findViewById(R.id.RelativeButton);
 
-        NextButt.setOnClickListener(new View.OnClickListener() {
+        LinButt.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
+                Intent moveLin = new Intent(getApplicationContext(), linearAct.class);
+                startActivity(moveLin);
             }
         });
 
-        BackButt.setOnClickListener(new View.OnClickListener() {
+        RelButt.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                Intent moveRel = new Intent(getApplicationContext(), relativeAct.class);
+                startActivity(moveRel);
+            }
+        });
 
+        ConButt.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent moveCon = new Intent(getApplicationContext(), ConstraintAct.class);
+                startActivity(moveCon);
             }
         });
 
